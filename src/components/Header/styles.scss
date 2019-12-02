@@ -1,0 +1,23 @@
+@import "../../commom/scss/variables";
+
+header#main-header {
+  position: fixed;
+  height: 90px;
+  width: 100%;
+  background: $black;
+  border-bottom: 1px solid $red;
+
+  .header-content {
+    margin: 10px 70px;
+    height: 70px;
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    color: $red;
+  }
+}

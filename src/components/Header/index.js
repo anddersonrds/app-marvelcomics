@@ -2,7 +2,7 @@ import React from 'react';
 
 import logo from '../../assets/marvel.svg';
 
-import './styles.css';
+import './styles.scss';
 
 export default function Header() {
   return (

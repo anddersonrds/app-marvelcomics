@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import api from "../../services/api";
 
-import './styles.css';
+import './styles.scss';
 
 export default function Comic({ match }) {
   const [comic, setComic] = useState({});

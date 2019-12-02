@@ -32,7 +32,8 @@ export default function Main() {
             <div className="comic-infos">
               <span className="comicId">#{comic.id}</span>
               <h2><strong>{comic.title}</strong></h2>
-              <p className="comicDescription block-with-text">{comic.description}</p>
+              <p className="comicDescription  block-with-text">{comic.description}</p>
+              <p><strong>Price:</strong> {comic.prices && (comic.prices.map(c => `$${c.price}`))}</p>
               <p><strong>Format:</strong> {comic.format}</p>
             </div>
 

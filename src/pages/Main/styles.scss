@@ -1,4 +1,4 @@
-@import '../../commom/scss/variables';
+@import "../../commom/scss/variables";
 
 .comic-list {
   display: flex;
@@ -18,22 +18,22 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  a{
+  a {
     width: 49%;
     text-decoration: none;
     margin-bottom: 20px;
 
-    li{
+    li {
       min-height: 200px;
     }
   }
 
-  .comicId{
+  .comicId {
     color: $gray-6;
     font-size: 16px;
   }
 
-  .comicDescription{
+  .comicDescription {
     color: $gray-4;
     margin-bottom: 10px;
   }
@@ -49,11 +49,11 @@
 
   padding: 20px;
   background: $white;
-  -webkit-box-shadow: 2px -1px 18px -5px rgba(184,177,184,1);
-  -moz-box-shadow: 2px -1px 18px -5px rgba(184,177,184,1);
-  box-shadow: 2px -1px 18px -5px rgba(184,177,184,1);
+  -webkit-box-shadow: 2px -1px 18px -5px rgba(184, 177, 184, 1);
+  -moz-box-shadow: 2px -1px 18px -5px rgba(184, 177, 184, 1);
+  box-shadow: 2px -1px 18px -5px rgba(184, 177, 184, 1);
 
-  &:hover{
+  &:hover {
     border: 2px solid $gray-6;
   }
 }
@@ -94,7 +94,7 @@
 
 .block-with-text {
   overflow: hidden;
-  position: relative;
+  //position: relative;
   line-height: 1.2em;
   max-height: 3.6em;
   text-align: justify;
@@ -102,15 +102,16 @@
   padding-right: 1em;
 }
 
+/*
 .block-with-text:before {
-  content: '...';
+  content: "...";
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
 .block-with-text:after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   width: 1em;
@@ -118,3 +119,4 @@
   margin-top: 0.2em;
   background: white;
 }
+*/
