@@ -12,10 +12,6 @@ It is important to get the comic listing from a server. there is the marvel api 
 
 ### Project example developed
 
-![home](.src/assets/home.png)
-
-![comic](./src/assets/current-comic.png)
-
 ![gif](./src/assets/example.gif)
 
 #### In the project directory, you can run:
