@@ -23,6 +23,8 @@ module.exports = {
     camelcase: 'off',
     'no-unused-vars': ['error', { argsIgnorePattern: 'next' }],
     'react/jsx-one-expression-per-line': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
+    'react/jsx-no-target-blank': 'off',
     'react/jsx-filename-extension': [
       'warn',
       {
