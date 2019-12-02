@@ -23,3 +23,11 @@ To install the dependencies
 To run the application
 
 ### `yarn start`
+
+### Future Update Intentions
+
+- Create app using React Native, and add shopping cart.
+
+- Add real-time mobile and web notification whenever you add a comic to your shopping cart.
+
+- Improve app styling.
