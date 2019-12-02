@@ -1,9 +1,18 @@
 import React from 'react';
+import { BrowserRouter} from 'react-router-dom';
+
+//import api from './services/api';
 import './App.css';
+
+import Header from './components/Header';
+import Routes from './routes';
 
 function App() {
   return (
-    <h1>Marvel Comics!</h1>
+    <BrowserRouter>
+      <Header />
+      <Routes />
+    </BrowserRouter>
   );
 }
 
