@@ -19,8 +19,6 @@ export default function Comic({ match }) {
     loadComics();
   }, [match.params.id]);
 
-  console.log(comic);
-
   return (
     <div className="comic-list">
       <div className="comic">
@@ -42,11 +40,13 @@ export default function Comic({ match }) {
           <p><strong>Issues:</strong> {comic.issueNumber}</p>
           <p><strong>Creators:</strong> {comic.creators && (comic.creators.items.map(creator => `${creator.name}, `))}</p>
           <p><strong>Format:</strong> {comic.format}</p>
+
           <div className="btn">
             <Link to='/'>
-              <li>Back</li>
+              <li><h2>BACK</h2></li>
             </Link>
           </div>
+
         </div>
       </div>
     </div>

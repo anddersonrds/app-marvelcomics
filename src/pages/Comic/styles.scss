@@ -46,4 +46,31 @@
       color: $gray-2;
     }
   }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    max-width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid $white;
+    transition: all 1s linear;
+
+    margin-top: 10px;
+    padding: 20px;
+    background: $white;
+    -webkit-box-shadow: 2px -1px 18px -5px rgba(184, 177, 184, 1);
+    -moz-box-shadow: 2px -1px 18px -5px rgba(184, 177, 184, 1);
+    box-shadow: 2px -1px 18px -5px rgba(184, 177, 184, 1);
+
+    &:hover {
+      border: 2px solid $gray-6;
+    }
+
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+  }
 }
