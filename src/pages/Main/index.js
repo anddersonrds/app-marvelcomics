@@ -41,11 +41,11 @@ export default function Main() {
                   {comic.description}
                 </p>
                 <p>
-                  <strong>Price:</strong>
+                  <strong>Price: </strong>
                   {comic.prices && comic.prices.map(c => `$${c.price}`)}
                 </p>
                 <p>
-                  <strong>Format:</strong>
+                  <strong>Format: </strong>
                   {comic.format}
                 </p>
               </div>

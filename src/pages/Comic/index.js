@@ -33,7 +33,7 @@ export default function Comic({ match }) {
 
         <div className="current-infos">
           <h1 className="comicId">
-            <strong>ID:</strong>#{comic.id}
+            <strong>ID: </strong>#{comic.id}
           </h1>
           <h2>
             <strong>Title: </strong>
@@ -44,28 +44,28 @@ export default function Comic({ match }) {
             {comic.description}
           </p>
           <p>
-            <strong>Date Modified:</strong>
+            <strong>Date Modified: </strong>
             {comic.modified}
           </p>
           <p>
-            <strong>Pages:</strong>
+            <strong>Pages: </strong>
             {comic.pageCount}
           </p>
           <p>
-            <strong>Price:</strong>
+            <strong>Price: </strong>
             {comic.prices && comic.prices.map(c => `$${c.price}`)}
           </p>
           <p>
-            <strong>Issues:</strong>
+            <strong>Issues: </strong>
             {comic.issueNumber}
           </p>
           <p>
-            <strong>Creators:</strong>
+            <strong>Creators: </strong>
             {comic.creators &&
               comic.creators.items.map(creator => `${creator.name}, `)}
           </p>
           <p>
-            <strong>Format:</strong>
+            <strong>Format: </strong>
             {comic.format}
           </p>
 
