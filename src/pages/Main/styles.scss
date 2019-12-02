@@ -1,0 +1,120 @@
+@import '../../commom/scss/variables';
+
+.comic-list {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  padding: 100px 100px 0px 100px;
+
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.comic-list ul {
+  list-style: none;
+  display: flex;
+  margin: 20px auto 0px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  a{
+    width: 49%;
+    text-decoration: none;
+    margin-bottom: 20px;
+
+    li{
+      min-height: 200px;
+    }
+  }
+
+  .comicId{
+    color: $gray-6;
+    font-size: 16px;
+  }
+
+  .comicDescription{
+    color: $gray-4;
+    margin-bottom: 10px;
+  }
+}
+
+.comic {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  border: 2px solid $white;
+  transition: all 1s linear;
+
+  padding: 20px;
+  background: $white;
+  -webkit-box-shadow: 2px -1px 18px -5px rgba(184,177,184,1);
+  -moz-box-shadow: 2px -1px 18px -5px rgba(184,177,184,1);
+  box-shadow: 2px -1px 18px -5px rgba(184,177,184,1);
+
+  &:hover{
+    border: 2px solid $gray-6;
+  }
+}
+
+.comic-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.comic-infos h2 {
+  color: $gray-2;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.comic-infos span {
+  font-size: 25px;
+}
+
+.comic-infos p {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ccc;
+}
+
+.comic-infos p span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.thumbnail img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+
+.block-with-text:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.block-with-text:after {
+  content: '';
+  position: absolute;
+  right: 0;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+}

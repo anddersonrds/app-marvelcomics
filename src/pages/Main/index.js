@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import api from "../../services/api";
 
-import "./styles.css";
+import "./styles.scss";
 
 export default function Main() {
   const [comics, setComics] = useState([]);
@@ -30,10 +30,10 @@ export default function Main() {
             </div>
 
             <div className="comic-infos">
-              <h1>{comic.id}</h1>
-              <h1>{comic.title}</h1>
-              <p>{comic.description}</p>
-              <p><span>Format: </span>{comic.format}</p>
+              <span className="comicId">#{comic.id}</span>
+              <h2><strong>{comic.title}</strong></h2>
+              <p className="comicDescription block-with-text">{comic.description}</p>
+              <p><strong>Format:</strong> {comic.format}</p>
             </div>
 
             </li>
