@@ -1,3 +1,49 @@
-.container {
-  padding-top: 100px;
+@import "../../commom/scss/variables";
+
+.current-thumbnail img {
+  width: 320px;
+  margin-right: 20px;
+}
+
+.current-infos {
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    color: $gray-4;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 30px;
+
+    strong {
+      color: $gray-2;
+    }
+  }
+
+  h2 {
+    color: $gray-4;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 30px;
+
+    strong {
+      color: $gray-2;
+    }
+  }
+
+  span {
+    font-size: 25px;
+  }
+
+  p {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 25px;
+    color: $gray-4;
+
+    strong {
+      color: $gray-2;
+    }
+  }
 }

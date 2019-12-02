@@ -79,7 +79,11 @@
   margin-top: 5px;
   font-size: 15px;
   line-height: 18px;
-  color: #ccc;
+  color: $gray-4;
+
+  strong {
+    color: $gray-4;
+  }
 }
 
 .comic-infos p span {
